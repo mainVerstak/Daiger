@@ -1,0 +1,39 @@
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__left {
+  flex: 0 0 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-language {
+  background-color: #1f5754;
+  height: 50px;
+}
+
+.header-logo img {
+  max-width: 100%;
+}
+
+.header-center {
+  background-image: url("../img/header/bacgraund.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1 1 auto;
+  min-height: 124px;
+  border-radius: 0 0 80px 80px;
+}
+
+.header__right {
+  flex: 0 0 19%;
+}
+
+.header-social-network {
+  height: 50px;
+  background-color: #1f5754;
+}
