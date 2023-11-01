@@ -181,17 +181,11 @@ if (animItems.length > 0) {
 			const animItemHeight = animItem.offsetHeight;
 			const animItemOffset = offset(animItem).top;
 			const animStart = 1;
-			let animItemPoint = window.innerHeight - animItemHeight / animStart;
+			let animItemPoint = window.innerHeight - (animItemHeight * 1.05) / animStart;
 			if (animItemHeight > window.innerHeight) {
 				animItemPoint = window.innerHeight - window.innerHeight / animStart;
 			}
 			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-				/*for (let index2 = 0; index2 < animItems.length; index2++) {
-					let animItem2 = animItems[index2];
-					animItem2.classList.remove('_active');
-				}*/
-				//animItem.style.height = animItem.clientHeight + "px";
-
 				animItem.classList.add('_active');
 			} else {
 				animItem.classList.remove('_active');
@@ -207,6 +201,35 @@ if (animItems.length > 0) {
 	}
 	animOnScroll();
 }
+
+
+/*
+const animItems = document.querySelectorAll('._anim-items');
+
+if (animItems.length > 0) {
+	window.addEventListener('scroll', animOnScroll);
+	function animOnScroll() {
+		for (let index = 0; index < animItems.length; index++) {
+			const animItem = animItems[index];
+			const animItemOffset = offset(animItem).top;
+			console.log(animItemOffset);
+		}
+	}
+	function offset(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollleft = window.pageXOffset || document.documentElement.scrollleft,
+			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollleft }
+	}
+}
+*/
+
+
+
+
+
+
+
 
 
 
