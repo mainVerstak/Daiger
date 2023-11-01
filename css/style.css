@@ -975,6 +975,8 @@ font-family: 'Raleway', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 82px;
+  position: relative;
+  z-index: 5;
 }
 
 .clients__body {
