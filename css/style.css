@@ -527,6 +527,8 @@ font-family: 'Roboto', sans-serif;
   position: relative;
   overflow: hidden;
   padding-bottom: 190px;
+  display: flex;
+  flex-direction: column;
 }
 
 .one-blok__bacgraund {
@@ -944,6 +946,12 @@ font-family: 'Roboto', sans-serif;
 .spheres-blok__img {
   flex: 0 0 150px;
   /*min-height: 165px;*/
+}
+.spheres-blok__img div {
+  display: block;
+}
+.spheres-blok__img * {
+  display: block;
 }
 .spheres-blok__img img {
   width: 100%;
