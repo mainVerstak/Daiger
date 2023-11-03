@@ -381,15 +381,43 @@ font-family: 'Roboto', sans-serif;
 }
 @media (min-width: 1064px) {
   .header-center ul a {
-    transition: all 0.3s ease 0s;
     position: relative;
     display: inline-block;
+    padding: 0 2px;
+    color: rgba(69, 157, 152, 0);
   }
-  .header-center ul a:hover {
+  .header-center ul li {
+    position: relative;
+  }
+  .header-center ul li span {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    pointer-events: none;
+    transition: font-weight 0.3s, opacity 0.3s, color 0.3s;
+  }
+}
+@media (min-width: 1064px) and (max-width: 1260px) {
+  .header-center ul li span {
+    font-size: calc(8px + 8 * ((100vw - 320px) / 940));
+  }
+}
+@media (min-width: 1064px) {
+  .header-center ul a:hover ~ span {
+    opacity: 1;
+    font-weight: 700;
     color: #4FCEC7;
   }
-  .header-center ul a:active {
-    transform: translateY(1px);
+  .header-center ul a:hover {
+    opacity: 0;
+  }
+  .header-center ul a:active ~ span {
     opacity: 0.7;
   }
 }

@@ -295,3 +295,19 @@ if (copiaContents) {
 //==================================================================================================================================================
 //Копирование ссылок - "Конец"
 //==================================================================================================================================================
+
+
+
+const linkHeaderWrapper = document.querySelector('.header-center');
+
+if (linkHeaderWrapper) {
+	const HeaderLinks = linkHeaderWrapper.querySelectorAll('a');
+	for (let i = 0; i < HeaderLinks.length; i++) {
+		let headerLink = HeaderLinks[i];
+		let headerLinkText = headerLink.textContent;
+		//console.log(headextrLinkTe);
+
+		headerLink.insertAdjacentHTML('afterend', `<span>${headerLinkText}</span>`);
+
+	}
+}
