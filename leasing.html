@@ -222,7 +222,7 @@
 			</section>
 
 			<div class="case-wrapper">
-				<section class="case-text">
+				<section class="case-text blok">
 					<div class="container">
 						<h2>
 							результаты
@@ -231,7 +231,7 @@
 							<span class="case-text__icon">
 								1
 							</span>
-							<p>
+							<p data-da=".case-text__img-1, 620, first">
 								На анонимизированной выборке малого размера ( 10 тыс. наблюдений) разработана модель
 								оценки вероятности дефолтности клиента, основанная на градиентном бустинге.
 								Отобранные для финальной модели признаки - стабильные во времени. Это важно, потому
@@ -241,8 +241,11 @@
 							</p>
 							<div class="case-text__body">
 								<div class="case-text__blok">
-									<div class="case-text__img">
-										<img src="img/case-text/1.png" alt="">
+									<div class="case-text__img case-text__img-1">
+										<picture>
+											<source srcset="img/case-text/1.png" media="(min-width: 620px)">
+											<img src="img/case-text/1-mb.png" alt="">
+										</picture>
 									</div>
 									<div class="case-text__signature">
 										<p>
@@ -254,7 +257,10 @@
 								</div>
 								<div class="case-text__blok">
 									<div class="case-text__img">
-										<img src="img/case-text/2.png" alt="">
+										<picture>
+											<source srcset="img/case-text/2.png" media="(min-width: 620px)">
+											<img src="img/case-text/2-mb.png" alt="">
+										</picture>
 									</div>
 									<div class="case-text__signature">
 										<p>
@@ -277,15 +283,15 @@
 						</div>
 					</div>
 				</section>
-				<section class="case-text">
+				<section class="case-text blok">
 					<div class="container">
 						<div class="case-text__wrapper case-text__wrapper_min">
 							<span class="case-text__icon">
 								2
 							</span>
 							<div class="case-text__body">
-								<div class="case-text__blok">
-									<p>
+								<div class="case-text__blok case-text__blok_mb-none">
+									<p data-da=".case-text__img-2, 620, first">
 										Проведен тренинг заказчика по интерпретации результатов работы модели и гибкой
 										настройки процесса одобрения под текущую бизнес-стратегию. Для последнего
 										разработан интерактивный инструмент, позволяющий анализировать возможные
@@ -293,30 +299,34 @@
 									</p>
 								</div>
 								<div class="case-text__blok case-text__blok_48">
-									<div class="case-text__img">
-										<img src="img/case-text/3.png" alt="">
+									<div class="case-text__img case-text__img-2">
+										<picture>
+											<source srcset="img/case-text/3.png" media="(min-width: 620px)">
+											<img src="img/case-text/3-mb.png" alt="">
+										</picture>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="case-text">
+				<section class="case-text blok">
 					<div class="container">
 						<div class="case-text__wrapper case-text__wrapper_min case-text__wrapper_pading-63-65-57-57">
 							<span class="case-text__icon case-text__icon_35">
 								3
 							</span>
 							<div class="case-text__body">
-								<div class="case-text__blok case-text__blok_normal">
-									<div class="case-text__signature case-text__signature-0-0">
+								<div class="case-text__blok case-text__blok_normal case-text__blok_mb-none">
+									<div data-da=".case-text__img-3, 620, first"
+										class="case-text__signature case-text__signature-0-0">
 										<p>
 											Адаптированы дашборды Daiger ModelOps под <br>
 											процесс заказчика:
 										</p>
 									</div>
 
-									<ul>
+									<ul data-da=".case-text__img-3, 620, last">
 										<li>
 											<p>
 												Появилась возможность в real-time режиме анализировать прогнозы модели
@@ -337,8 +347,11 @@
 								<div class="case-text__blok case-text__blok_50">
 									<div class="case-text__body">
 										<div class="case-text__blok">
-											<div class="case-text__img">
-												<img src="img/case-text/4.png" alt="">
+											<div class="case-text__img case-text__img-3">
+												<picture>
+													<source srcset="img/case-text/4.png" media="(min-width: 620px)">
+													<img src="img/case-text/4-mb.png" alt="">
+												</picture>
 											</div>
 											<div class="case-text__signature">
 												<p>
@@ -348,7 +361,10 @@
 										</div>
 										<div class="case-text__blok">
 											<div class="case-text__img">
-												<img src="img/case-text/5.png" alt="">
+												<picture>
+													<source srcset="img/case-text/5.png" media="(min-width: 620px)">
+													<img src="img/case-text/5-mb.png" alt="">
+												</picture>
 											</div>
 											<div class="case-text__signature">
 												<p>
@@ -360,7 +376,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="case-text-footer">
+						<div class="case-text-footer case-text-footer_border">
 							<div class="case-text-footer__blok case-text-footer__blok_border">
 								<p>
 									В рамках R&D нашли способ повысить качество ранжирования <br>
@@ -369,7 +385,11 @@
 									Reject Inference, включив в модель отклоненные
 									заявки
 								</p>
-								<img src="img/case-text/icon.svg" alt="">
+								<!--<img src="img/case-text/icon.svg" alt="">-->
+								<picture>
+									<source srcset="img/case-text/icon.svg" media="(min-width: 620px)">
+									<img src="img/case-text/icon-mb.svg" alt="">
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -468,7 +488,10 @@
 				</div>
 				<div class="footer-botom">
 					<div class="footer-botom__center">
-						<img src="img/footer/bacgraund.svg" alt="">
+						<picture>
+							<source srcset="img/footer/bacgraund.svg" media="(min-width: 620px)">
+							<img src="img/footer/bacgraund-mb.svg" alt="">
+						</picture>
 						<a href="#">
 							<img src="img/footer/logo.svg" alt="">
 						</a>
