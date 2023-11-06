@@ -26,7 +26,7 @@
 <body>
 	<div class="wrapper">
 		<div class="content">
-			<section class="one-blok ">
+			<section class="one-blok one-blok_index">
 				<div class="one-blok__bacgraund ibg">
 					<img src="img/one-blok/bacgraund.jpg" alt="">
 				</div>
@@ -34,7 +34,7 @@
 					<div class="header">
 						<div class="container">
 							<div class="header__left">
-								<div class="header-language">
+								<div class="header-language" data-da=".burger__body, 920, first">
 									<a href="#">
 										En
 									</a>
@@ -42,14 +42,14 @@
 										Ru
 									</a>
 								</div>
-								<div class="header-logo">
+								<div class="header-logo" data-da=".header-center, 920, first">
 									<a href="#">
 										<img src="img/header/logo.svg" alt="">
 									</a>
 								</div>
 							</div>
 							<div class="header-center">
-								<ul>
+								<ul data-da=".burger__body, 920, first">
 									<li>
 										<a href="#">
 											Решения
@@ -73,7 +73,7 @@
 								</ul>
 							</div>
 							<div class="header__right">
-								<div class="header-social-network _copia-content">
+								<div class="header-social-network _copia-content" data-da=".burger__body, 920, first">
 									<a href="#">
 										+7 (922) 111-80-60
 									</a>
@@ -81,12 +81,23 @@
 										info@daiger.com
 									</span>
 								</div>
-								<div class="header-button">
+								<div class="header-button" data-da=".one-blok__footer, 920, first">
 									<a href="#" class="">
 										Связаться с нами
 									</a>
 								</div>
 							</div>
+						</div>
+						<div class="header__icon">
+
+						</div>
+					</div>
+					<div class="burger">
+						<div class="burger__header">
+							<div class="header__icon"></div>
+						</div>
+						<div class="burger__body">
+
 						</div>
 					</div>
 				</header>
@@ -98,6 +109,7 @@
 					Помогаем компаниями
 					зарабатывать с помощью AI
 				</h1>
+				<div class="one-blok__footer one-blok__footer_pading"></div>
 			</section>
 			<section class="projects _anim-items">
 				<div class="container">
@@ -264,18 +276,18 @@
 						Наши клиенты
 					</h2>
 					<div class="clients__body">
-						<a href="#" class="clients__link">
+						<div href="#" class="clients__link">
 							<img src="img/clients/1.svg" alt="">
-						</a>
-						<a href="#" class="clients__link">
+						</div>
+						<div href="#" class="clients__link">
 							<img src="img/clients/2.svg" alt="">
-						</a>
-						<a href="#" class="clients__link">
+						</div>
+						<div href="#" class="clients__link">
 							<img src="img/clients/3.svg" alt="">
-						</a>
-						<a href="#" class="clients__link">
+						</div>
+						<div href="#" class="clients__link">
 							<img src="img/clients/4.svg" alt="">
-						</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -286,6 +298,9 @@
 					</h2>
 					<div class="contacts__body">
 						<div class="contacts-blok contacts-blok_flex">
+							<div class="contacts-blok__img-botom">
+								<img src="img/contact/mb-botom.png" alt="">
+							</div>
 							<div class="contacts-item">
 								<h3>
 									Доверьтесь нашей экспертизе
@@ -309,13 +324,13 @@
 								</p>
 							</div>
 							<div class="contacts-screenshot">
-								<div class="contacts-screenshot__img">
+								<a href="#" class="contacts-screenshot__img">
 									<picture>
 										<source srcset="img/contact/qrcode-x3.png 2x" media="(min-width: 920px)">
-										<source srcset="img/contact/qrcode-x3.png">
-										<img src="img/contact/qrcode.png" alt="">
+										<source srcset="img/contact/qrcode-x3.png" media="(min-width: 920px)"">
+										<img src=" img/contact/button-mb.svg" alt="">
 									</picture>
-								</div>
+								</a>
 								<div class="contacts-screenshot__text">
 									<p>
 										Отсканируйте QR-код, чтобы добавить нас в контакты.
@@ -325,7 +340,7 @@
 							</div>
 
 						</div>
-						<div class="contacts-blok">
+						<div class="contacts-blok contacts-blok_form">
 							<form class="contacts-form _form">
 								<div class="contacts-form__wrapper">
 									<div class="contacts-form__input">
@@ -354,21 +369,24 @@
 									</p>
 								</div>
 							</form>
+							<div class="contacts-blok__img-top">
+								<img src="img/contact/mb-top.png" alt="">
+							</div>
 						</div>
 					</div>
 					<div class="contacts-footer">
 						<div class="contacts-footer__text">
-							<a href="#">
-								© 2023 ООО «Дайгер». Все права защищены
-							</a>
+							<p href="#" data-da=".contacts-blok_flex, 920, last">
+								© 2023 ООО «Дайгер» Все права защищены
+							</p>
 						</div>
 						<div class="contacts-footer__logo">
-							<a href="#">
+							<a href="#" data-da=".contacts-form, 920, first">
 								<img src="img/contact/logo.webp" alt="">
 							</a>
 						</div>
 						<div class="contacts-footer__text">
-							<a href="#">
+							<a href="#" data-da=".contacts-blok_flex, 920, last">
 								Политика конфиденциальности
 							</a>
 						</div>
