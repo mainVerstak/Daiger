@@ -1857,6 +1857,12 @@ font-family: 'Roboto', sans-serif;
     margin-bottom: 47px;
   }
 }
+@media (max-width: 340px) {
+  .contacts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .contacts__body {
   display: flex;
@@ -1998,6 +2004,7 @@ font-family: 'Roboto', sans-serif;
 @media (max-width: 920px) {
   .contacts-item {
     margin-bottom: 38px;
+    /*=================*/
   }
   .contacts-item h3 {
     text-align: center;
@@ -2017,6 +2024,11 @@ font-family: 'Roboto', sans-serif;
   }
   .contacts-item.contacts-item_link {
     margin-bottom: 0;
+  }
+  .contacts-item.contacts-item_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -2066,9 +2078,10 @@ font-family: 'Roboto', sans-serif;
   color: #FFF;
   font-family: Raleway;
   font-size: 16px;
-  line-height: 120%;
+  font-style: normal;
   font-weight: 400;
-  max-width: 200px;
+  line-height: normal;
+  max-width: 230px;
   margin-bottom: 12px;
 }
 @media (max-width: 920px) {
@@ -2226,6 +2239,7 @@ font-family: 'Roboto', sans-serif;
   .contacts-form__footer button:hover {
     background: rgba(255, 255, 255, 0.9);
     color: #286561;
+    font-weight: 600;
   }
   .contacts-form__footer button:active {
     transform: translateY(2px);
@@ -2358,6 +2372,234 @@ font-family: 'Roboto', sans-serif;
     transform: translateY(5px);
     opacity: 0.7;
   }
+}
+
+/*===================================*/
+.contacts-number {
+  display: inline-flex;
+  position: relative;
+}
+.contacts-number._active .contacts-email__icon {
+  opacity: 1;
+  transform: translate(27%, -50%);
+}
+@media (min-width: 1064px) {
+  .contacts-number {
+    /*==================*/
+  }
+  .contacts-number:hover .contacts-number__icon {
+    opacity: 1;
+    transform: translate(0);
+  }
+  .contacts-number:hover .contacts-number__button {
+    opacity: 1;
+    transform: translate(0);
+  }
+  .contacts-number._active:hover .contacts-email__icon {
+    opacity: 1;
+    transform: translate(100%, -42%);
+  }
+}
+
+.contacts-number__link {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 8px;
+  display: flex;
+}
+.contacts-number__link span {
+  padding-right: 10px;
+  white-space: nowrap;
+}
+@media (min-width: 1064px) {
+  .contacts-number__link * {
+    transition: all 0.3s;
+  }
+  .contacts-number__link:hover .contacts-number__icon {
+    background: #fff;
+    cursor: pointer;
+  }
+  .contacts-number__link:hover span {
+    transform: translateY(-2px);
+  }
+  .contacts-number__link:active span {
+    transform: translateY(1px);
+    opacity: 0.7;
+  }
+  .contacts-number__link:hover .contacts-number__icon * {
+    fill: #286561;
+  }
+}
+@media (max-width: 920px) {
+  .contacts-number__link {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.4%;
+    /* 25.88px */
+  }
+}
+
+.contacts-number__icon {
+  flex: 0 0 28px;
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  background: #459D98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.3s;
+  top: 2px;
+  position: relative;
+}
+@media (max-width: 1064px) {
+  .contacts-number__icon {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@media (max-width: 920px) {
+  .contacts-number__icon {
+    top: -2px;
+  }
+}
+
+.contacts-number__button {
+  flex: 0 0 28px;
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  background: #459D98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  position: relative;
+  top: 2px;
+}
+@media (min-width: 1064px) {
+  .contacts-number__button * {
+    transition: all 0.3s;
+  }
+  .contacts-number__button:hover {
+    background: #fff;
+    cursor: pointer;
+  }
+  .contacts-number__button:hover * {
+    fill: #286561;
+  }
+}
+@media (max-width: 1064px) {
+  .contacts-number__button {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@media (max-width: 920px) {
+  .contacts-number__button {
+    top: -2px;
+  }
+}
+
+.contacts-email {
+  display: inline-flex;
+  position: relative;
+}
+.contacts-email._active .contacts-email__icon {
+  opacity: 1;
+  transform: translate(62%, -42%);
+}
+@media (min-width: 1064px) {
+  .contacts-email {
+    /*==================*/
+  }
+  .contacts-email:hover .contacts-number__icon {
+    opacity: 1;
+    transform: translate(0);
+  }
+  .contacts-email._active:hover .contacts-email__icon {
+    opacity: 1;
+    transform: translate(100%, -42%);
+  }
+}
+
+.contacts-email__body {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  display: flex;
+}
+.contacts-email__body span {
+  display: inline-block;
+  padding-right: 10px;
+  transition: all 0.3s;
+}
+@media (min-width: 1064px) {
+  .contacts-email__body {
+    transition: all 0.3s;
+  }
+  .contacts-email__body:hover span {
+    transform: translateY(-2px);
+  }
+  .contacts-email__body:active span {
+    transform: translateY(1px);
+    opacity: 0.7;
+  }
+  .contacts-email__body .contacts-number__icon, .contacts-email__body .contacts-number__icon * {
+    transition: all 0.3s;
+  }
+  .contacts-email__body:hover .contacts-number__icon * {
+    fill: #286561;
+  }
+  .contacts-email__body:hover .contacts-number__icon {
+    background: #fff;
+  }
+}
+@media (max-width: 920px) {
+  .contacts-email__body {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.4%;
+    /* 25.88px */
+  }
+}
+
+.contacts-email__icon {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 6px;
+  background: #459D98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 107px;
+  transform: translate(0%, -50%);
+  opacity: 0;
+  padding-bottom: 4px;
+  transition: all 0.3s;
+  position: absolute;
+  pointer-events: none;
+  right: -10px;
+  top: 50%;
 }
 
 .goals {
