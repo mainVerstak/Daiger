@@ -573,18 +573,19 @@ font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 @media (min-width: 1064px) {
+  .header-social-network {
+    /*& a:hover span,*/
+    /*& a:active span,*/
+  }
   .header-social-network a, .header-social-network span {
     transition: all 0.3s ease 0s;
     position: relative;
     display: inline-block;
   }
-  .header-social-network a:hover, .header-social-network span:hover {
+  .header-social-network span:hover {
     color: #4FCEC7;
   }
-  .header-social-network a:hover:before, .header-social-network span:hover:before {
-    width: 100%;
-  }
-  .header-social-network a:active, .header-social-network span:active {
+  .header-social-network span:active {
     transform: translateY(1px);
     opacity: 0.7;
   }
