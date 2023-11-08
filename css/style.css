@@ -658,6 +658,9 @@ font-family: 'Roboto', sans-serif;
   .header-link .header-link__icon:hover * {
     fill: #286561;
   }
+  .header-link .header-link__icon:active {
+    opacity: 0.7 !important;
+  }
 }
 @media (min-width: 1064px) {
   .header-link:hover .header-link__icon, .header-link:hover .header-link__button {
@@ -722,6 +725,9 @@ font-family: 'Roboto', sans-serif;
   .header-link__button:hover * {
     fill: #286561;
   }
+  .header-link__button:active {
+    opacity: 0.7 !important;
+  }
 }
 @media (max-width: 920px) {
   .header-link__button {
@@ -783,6 +789,9 @@ font-family: 'Roboto', sans-serif;
   }
   .header-email .header-email__icon:hover * {
     fill: #286561;
+  }
+  .header-email .header-email__icon:active {
+    opacity: 0.7 !important;
   }
 }
 @media (min-width: 1064px) {
