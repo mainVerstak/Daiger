@@ -5340,6 +5340,7 @@ font-family: 'Roboto', sans-serif;
   border-radius: 0 17px 17px 0;
 }
 .case-stages__blok p {
+  font-family: Raleway;
   color: #FFF;
   text-align: center;
   font-size: 16px;
