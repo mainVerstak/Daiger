@@ -3449,6 +3449,7 @@ font-family: 'Roboto', sans-serif;
   /*=============================*/
   /*====================================*/
   /*===============================*/
+  /*==========================================*/
 }
 .case-text.blok {
   display: block !important;
@@ -3572,6 +3573,22 @@ font-family: 'Roboto', sans-serif;
 .case-text.case-text_cleaning .case-text__wrapper_footer {
   padding-top: 75px;
   padding-bottom: 34px;
+}
+.case-text.case-text_42 p {
+  margin-bottom: 34px;
+}
+.case-text.case-text_42 .case-text__wrapper_footer {
+  padding-top: 70px;
+}
+@media (min-width: 920px) {
+  .case-text.case-text_pading-p p {
+    margin-top: 14px;
+    margin-bottom: 42px;
+  }
+  .case-text.case-text_pading-p.case-text_two-blok p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 920px) {
   .case-text {
