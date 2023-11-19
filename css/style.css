@@ -4076,7 +4076,7 @@ font-family: 'Roboto', sans-serif;
   padding-left: 12px;
   padding-right: 12px;
   position: relative;
-  width: calc(100% - 13px);
+  width: 100%;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   order: 5;
